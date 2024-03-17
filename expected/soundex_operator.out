@@ -1,0 +1,53 @@
+CREATE EXTENSION "soundex-operator";
+-- john and joan should be equal
+SELECT soundex_eq('john', 'joan');
+ soundex_eq 
+------------
+ t
+(1 row)
+
+-- bob and shirley should not
+SELECT soundex_eq('john', 'shirley');
+ soundex_eq 
+------------
+ f
+(1 row)
+
+-- and the inverse of each
+SELECT soundex_ne('john', 'joan');
+ soundex_ne 
+------------
+ f
+(1 row)
+
+SELECT soundex_ne('john', 'shirley');
+ soundex_ne 
+------------
+ t
+(1 row)
+
+-- those should translate into the operators
+SELECT 'john' >@@< 'joan';
+ ?column? 
+----------
+ t
+(1 row)
+
+SELECT 'john' >@@< 'shirley';
+ ?column? 
+----------
+ f
+(1 row)
+
+SELECT 'john' <@@> 'joan';
+ ?column? 
+----------
+ f
+(1 row)
+
+SELECT 'john' <@@> 'shirley';
+ ?column? 
+----------
+ t
+(1 row)
+

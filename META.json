@@ -1,0 +1,50 @@
+{
+  "name": "soundex-operator",
+  "abstract": "soundex - operators for comparing strings",
+  "description": "soundex - operators for comparing strings",
+  "version": "1.0.0",
+  "maintainer": [
+    "Jerry Sievert <code@legitimatesounding.com>"
+  ],
+  "license": {
+    "PostgreSQL": "https://www.postgresql.org/about/licence"
+  },
+  "prereqs": {
+    "runtime": {
+      "requires": {
+        "PostgreSQL": "15.3.0"
+      },
+      "recommends": {
+        "PostgreSQL": "15.3.0"
+      }
+    }
+  },
+  "provides": {
+    "soundex-operator": {
+      "file": "postgres-operators--1.0.0.sql",
+      "docfile": "README.md",
+      "version": "1.0.0",
+      "abstract": "soundex - operators for comparing strings"
+    }
+  },
+  "resources": {
+    "bugtracker": {
+      "web": "https://github.com/pgextensions/operator-template/issues"
+    },
+    "repository": {
+      "url": "https://github.com/pgextensions/operator-template.git",
+      "web": "https://github.com/pgextensions/operator-template",
+      "type": "git"
+    }
+  },
+  "generated_by": "Jerry Sievert",
+  "meta-spec": {
+    "version": "1.0.0",
+    "url": "https://pgxn.org/meta/spec.txt"
+  },
+  "tags": [
+    "soundex",
+    "template",
+    "example"
+  ]
+}

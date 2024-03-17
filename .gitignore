@@ -1,0 +1,4 @@
+results
+src/*.o
+*.so
+*.dylib

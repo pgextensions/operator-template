@@ -1,0 +1,23 @@
+apiVersion: v1
+build:
+  main:
+    - name: my build step
+      run: |
+        make
+keywords:
+  - soundex
+  - template
+  - example
+  - operator
+license: PostgreSQL
+maintainers:
+  - email: code@legitimatesounding.com
+    name: Jerry Sievert
+name: soundex-operator
+pgVersions:
+  - '14'
+  - '15'
+  - '16'
+repository: 'https://github.com/pgextensions/operator-template.git'
+source: https://github.com/pgextensions/operator-template/archive/refs/tags/v1.0.0.tar.gz
+version: 1.0.0

@@ -1,0 +1,5 @@
+# soundex operator extension
+comment = 'soundex - operators for comparing strings'
+default_version = '1.0.0'
+module_pathname = '$libdir/soundex-operator'
+relocatable = true
