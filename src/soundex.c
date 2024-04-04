@@ -23,7 +23,7 @@
 static const char *soundex_table = "01230120022455012623010202";
 
 /*
- * soundex_core(char letter)
+ * soundex_code(char letter)
  *
  * Returns the code from the table, or if outside the ASCII values of
  * A - Z, it simply returns the value of the letter passed.
